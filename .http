@@ -1,39 +1,39 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NTA0MzgxMTcsImV4cCI6MTc1MDUyNDUxN30.KHbRuNlqvtk0_VohT43lBLi2c6qEndF-JuOYDAlw-ys
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NTA0NDI3MTEsImV4cCI6MTc1MDUyOTExMX0.KjCR4RA_yCH7X6VZJUO_zw61FTVyIyebUBjnsrgpvUI
 
 ### Register a new user
-POST http://localhost:5000/api/auth/register
+POST https://meds-buddy-backend.onrender.com/api/auth/register
 Content-Type: application/json
 
 {
-  "email": "testuser@example.com",
-  "password": "password123",
+  "email": "testashik@example.com",
+  "password": "ashik123",
   "role": "patient"
 }
 
 ### Login user
-POST http://localhost:5000/api/auth/login
+POST https://meds-buddy-backend.onrender.com/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "testuser@example.com",
-  "password": "password123"
+  "email": "testashik@example.com",
+  "password": "ashik123"
 }
 
 ### Add Medication (replace TOKEN below)
-POST http://localhost:5000/api/medications
+POST https://meds-buddy-backend.onrender.com/api/medications
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "name": "dolo",
-  "dosage": "750mg",
-  "frequency": "1 times a day"
+  "name": "Amoxicillin",
+  "dosage": "500mg",
+  "frequency": "3 times a day"
 }
 
 ### Get Medications
-GET http://localhost:5000/api/medications
+GET https://meds-buddy-backend.onrender.com/api/medications
 Authorization: Bearer {{token}}
 
 ### Mark Medication as Taken (replace MED_ID and TOKEN)
-POST http://localhost:5000/api/medications/taken/1
+POST https://meds-buddy-backend.onrender.com/api/medications/taken/3
 Authorization: Bearer {{token}}
