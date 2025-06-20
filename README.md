@@ -1,30 +1,39 @@
 # Meds Backend
 
-This is the backend for the Meds application, built with **Node.js**, **Express**, and **SQLite3**.
+A Node.js + Express backend using SQLite for managing medical data securely.
+
+## 📦 Technologies Used
+- Node.js
+- Express
+- SQLite
+- bcryptjs
+- JSON Web Tokens (JWT)
+- CORS
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
+- Node.js (v16 or later recommended)
+- npm or yarn
+- Postman or REST Client extension (for testing APIs)
 
-Make sure you have installed:
+---
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [Git](https://git-scm.com/)
-
-### 📦 Installation
-
-Clone the repo and install dependencies:
+### 📁 Project Setup
 
 ```bash
-git clone https://github.com/ashik-github1008/meds_backend.git
+# Clone the repository
+git clone https://github.com/your-username/meds_backend.git
 cd meds_backend
+
+# Install dependencies
 npm install
 
-⚙️ Environment Setup
-If your app uses environment variables, create a .env file in the root directory:
-PORT=5000
-JWT_SECRET=your_jwt_secret
-
-💻 Running the Application
-Start the development server:
+▶️ Running the Application
+# Start the server
 node server.js
+
+🔌 API Endpoints
+All API endpoints are available in the .http file
